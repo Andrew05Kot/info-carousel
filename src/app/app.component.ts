@@ -1,15 +1,15 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
-import { SlideModel } from './info-carousel/models';
-import { InfoCarouselComponent } from './info-carousel/info-carousel.component';
+import { SlideModel } from '../../projects/ffp-carousel/src/lib/models';
+import { FfpCarouselComponent } from '../../projects/ffp-carousel/src/lib/ffp-carousel.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
-  imports: [CommonModule, RouterOutlet, InfoCarouselComponent]
+  imports: [CommonModule, RouterOutlet, FfpCarouselComponent]
 })
 export class AppComponent {
 

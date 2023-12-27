@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { InfoCarouselComponent } from './info-carousel.component';
+import { FfpCarouselComponent } from './ffp-carousel.component';
 
 describe('InfoCarouselComponent', () => {
-  let component: InfoCarouselComponent;
-  let fixture: ComponentFixture<InfoCarouselComponent>;
+  let component: FfpCarouselComponent;
+  let fixture: ComponentFixture<FfpCarouselComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [InfoCarouselComponent]
+      imports: [FfpCarouselComponent]
     })
     .compileComponents();
-    
-    fixture = TestBed.createComponent(InfoCarouselComponent);
+
+    fixture = TestBed.createComponent(FfpCarouselComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

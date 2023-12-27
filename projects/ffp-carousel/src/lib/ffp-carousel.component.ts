@@ -4,13 +4,13 @@ import { SlideModel } from './models';
 import { LabelComponent } from "./components/label/label.component";
 
 @Component({
-    selector: 'app-info-carousel',
+    selector: 'ffp-carousel',
     standalone: true,
-    templateUrl: './info-carousel.component.html',
-    styleUrl: './info-carousel.component.scss',
+    templateUrl: './ffp-carousel.component.html',
+    styleUrl: './ffp-carousel.component.scss',
     imports: [CommonModule, LabelComponent]
 })
-export class InfoCarouselComponent {
+export class FfpCarouselComponent {
 
   @Input() height: string | undefined;
   @Input() backgroundColor: string = '#f9f9f9';
@@ -29,7 +29,7 @@ export class InfoCarouselComponent {
     }
   }
 
-  slideStyles(): { [key: string]: string } {    
+  slideStyles(): { [key: string]: string } {
     return {
       'transform': `translateX(-${this.currentIndex * 100}%)`
     };
