@@ -29,12 +29,14 @@ export class AppComponent {
     {
       title: 'Cheese Pizza',
       subtitle: 'Pizza',
+      label: 'Promoted',
       description: 'It should be no shocker that a classic is the statistical favorite. Cheese pizza is one of the most popular choices. It will always be a simple, unadorned masterpiece on its own.',
       imageUrl: 'https://www.cicis.com/media/d21b0xj1/mac-and-cheese-pizza.png'
     },
     {
       title: 'Veggie Pizza',
       subtitle: 'Pizza',
+      label: 'Veggie',
       description: 'When you want to jazz up your cheese pizza with color and texture, veggies are the perfect topping. And you’re only limited by your imagination. Everything from peppers and mushrooms, to eggplant and onions make for an exciting and tasty veggie pizza.',
       imageUrl: 'https://www.cicis.com/media/nctfaewb/veggie-pizza.png'
     },
@@ -47,6 +49,7 @@ export class AppComponent {
     {
       title: 'Breakfast Burrito',
       subtitle: 'Breakfast',
+      label: 'Promoted',
       description: 'Start your day off right with this breakfast burrito filled with scrambled eggs, cheese, potatoes, and your choice of bacon or sausage.',
       imageUrl: 'https://res.cloudinary.com/sonic-drive-in/image/upload/c_fit,w_600,h_600,dpr_2,f_auto,q_auto/v1622138834/oa_menu/products/menuproduct_breakfast_burrito-sausage-egg-cheese-jr.png'
     }

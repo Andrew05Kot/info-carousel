@@ -1,19 +1,17 @@
 <div class="carousel"
-     *ngIf="_slides"
+     *ngIf="slides"
      [style.height]="height">
   <img class="left-button"
        (click)="prev()"
-       src="/assets/images/prev.png"
+       [src]="PREV_IMG_SRC"
        alt="previous">
   <div class="slide-container"
        [ngStyle]="slideStyles()">
-
     <div class="slide"
          [style.height]="height"
          [style.background-color]="backgroundColor"
-         *ngFor="let item of _slides; let i = index"
+         *ngFor="let item of slides; let i = index"
          [ngClass]="{'active': currentIndex === i}">
-
       <div class="slide-info">
         <h1 class="title">{{ item.title }}</h1>
         <h2 class="subtitle">{{ item.subtitle }}</h2>
@@ -22,17 +20,16 @@
       <div class="slide-image">
         <img src="{{item.imageUrl}}"
              alt="{{item.title}}"
-             [style.height]="height ? 'calc(' + height + ' * 0.88)' : 'auto'">
+             [style.height]="slideImageHeight">
       </div>
 
-      <div class="labels-list">
-          <app-label [name]="item.subtitle"></app-label>
-        </div>
+      <div class="label" *ngIf="item?.label">
+        <app-label [name]="item.label"></app-label>
+      </div>
     </div>
-
   </div>
   <img class="right-button"
-       (click)="next()"  
-       src="/assets/images/next.png"
+       (click)="next()"
+       [src]="NEXT_IMG_SRC"
        alt="next">
 </div>
