@@ -4,7 +4,7 @@ FFP Carousel is an Angular library that provides a simple and customizable carou
 
 ## Example
 
-
+![Example Carousel](https://raw.githubusercontent.com/Andrew05Kot/info-carousel/master/projects/ffp-carousel/example.png)
 
 ## Features
 
